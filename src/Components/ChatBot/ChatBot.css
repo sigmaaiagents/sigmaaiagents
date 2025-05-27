@@ -1,0 +1,104 @@
+.chatbot-main-container {
+    .upload-section {
+        h1 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 14px;
+        }
+    }
+
+    .message-main-container {
+        width: 100%;
+        height: 450px;
+        padding: 16px;
+        border-radius: 12px;
+        background: rgba(0,0,0,0.35);
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .messages-container {
+            width: 100%;
+            height: 80%;
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .message-bot {
+                width: fit-content;
+                height: fit-content;
+                max-width: 80%;
+                border-radius: 12px;
+                padding: 16px;
+                background: #fff;
+                color: #000;
+                font-size: 16px;
+                margin-right: auto;
+                margin-bottom: 8px;
+            }
+
+            .message-human {
+                width: fit-content;
+                height: fit-content;
+                padding: 16px;
+                max-width: 80%;
+                border-radius: 12px;
+                background: #7f7fee;
+                color: #fff;
+                font-size: 16px;
+                margin-left: auto;
+                margin-bottom: 8px;
+            }
+        }
+
+        .input-container {
+            width: 100%;
+            height: 12%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+
+            input {
+                width: 80%;
+                height: 100%;
+                border: 1px solid #fff;
+                border-radius: 50px;
+                color: #fff;
+                outline: none;
+                font-size: 16px;
+                background: none;
+                padding-left: 30px;
+
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+
+            button {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: linear-gradient(309deg, #c10864, #ff0080, #ff8c00, #ffd000);
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                outline: none;
+                border: none;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s, box-shadow 0.2s;
+
+                &:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+                }
+            }
+        }
+    }
+}
